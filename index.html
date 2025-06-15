@@ -91,18 +91,40 @@
         
         <!-- AR Marker (using Hiro marker for testing) -->
         <!-- Replace 'hiro' with your custom pattern file later -->
-        <a-marker type="pattern" url="pattern-chapter1_main.png.patt"
+        <a-marker type="pattern" url="pattern-chapter1_main.png.patt">
             
             <!-- Main 3D Text -->
             <a-text
-                id="requestText"
-                value="Can you help me?"
-                color="#5a67d8"
-                position="0 0 0"
-                align="center"
-                width="4"
-                font="kelsonsans"
-                animation="property: rotation; to: 0 360 0; dur: 10000; loop: true; easing: linear">
+               <!-- Chapter 1 Title -->
+<a-text
+    value="Chapter 1: Making Requests"
+    color="#FF6B35"
+    position="0 1.5 0"
+    align="center"
+    width="6"
+    font="kelsonsans">
+</a-text>
+
+<!-- Key Patterns -->
+<a-text
+    value="Can you...? Could you...? Would you mind...?"
+    color="#4CAF50"
+    position="0 0.8 0"
+    align="center"
+    width="5"
+    font="kelsonsans">
+</a-text>
+
+<!-- Remember tip -->
+<a-text
+    value="Always add PLEASE!"
+    color="#2196F3"
+    position="0 0.2 0"
+    align="center"
+    width="4"
+    font="kelsonsans"
+    animation="property: scale; to: 1.1 1.1 1.1; dur: 2000; loop: true; dir: alternate">
+</a-text>
             </a-text>
             
             <!-- Floating particles effect -->
